@@ -1,0 +1,33 @@
+data types 
+1. string - quotes " " ' '
+2. number - numbers
+3. boolean - true of false      //cs
+
+console.log("")  =  to print something
+
+% - modulus = show remainder after you divide
+math.random = to generate random number    //CASE SENSITIVE
+math.floor  = to round to the nearest whole number
+-----------------------------------------------------------------------------
++ Interpolation = insert a variable in a string
+Example:
+var favoriteAnimal = 'DOG';
+console.log('My favorite Animal: Koala' + favoriteAnimal + '.');
+    = My favorite Animal: Koala Dog 
+
+comparison operators: <, >, <=, >=, ===(are these things equal), !==,
+
+&& = both must be true
+|| = either can be true
+! = iwant to make sure this is the opposite of what it really is
+!== = this should not be equal to each other
+
+switch(variable)
+{
+	case 'variable':
+		console.log('output');
+		break;
+}
+------------------------------------------------------------------
+
+

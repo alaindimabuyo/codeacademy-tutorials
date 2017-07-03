@@ -1,0 +1,53 @@
+function variable ()
+{
+if {}
+}
+
+//////////////
+Inputnumber = a parameter - function(number);     // number is the parameter
+
+function takeOrder(topping) {
+  console.log('Order: pizza topped with ' + topping);     //  Order: pizaa topped with bacon
+}
+
+takeOrder('bacon');
+
+/////////////////
+
+function takeOrder(topping, crustType) {
+  console.log('Order: ' + crustType + ' crust topped with ' + topping);
+}
+
+takeOrder('bacon', 'thin');                         // Order: thin crust topped with bacon 
+takeOrder('pepperoni', 'regular');			// Order: regular crust topped with pepperoni 
+takeOrder('pesto', 'thin');				// Order: thin crust topped with pesto 
+
+///////////
+
+var orderCount = 0;
+
+function takeOrder(topping, crustType) {
+  console.log('Order: ' + crustType + ' crust topped with ' + topping);
+  orderCount = orderCount + 1;
+}
+
+function getSubTotal(itemCount) {
+  return itemCount * 7.5;
+}
+
+function getTax() {
+  return getSubTotal(orderCount) * 0.06;
+}
+
+function getTotal() {
+  return getSubTotal(orderCount) + getTax();
+}
+
+
+takeOrder('bacon', 'thin');
+takeOrder('pepperoni', 'regular');
+takeOrder('pesto', 'thin');
+
+console.log(getSubTotal(orderCount));
+console.log(getTotal());
+
