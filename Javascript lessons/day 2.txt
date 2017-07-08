@@ -50,4 +50,89 @@ takeOrder('pesto', 'thin');
 
 console.log(getSubTotal(orderCount));
 console.log(getTotal());
+///////////////////////////
+Scope - refers to where in a program a variable can be accessed
+
+var laundryRoom = 'Basement';
+var mailRoom = 'Room 1A';
+
+function myApartment()
+{
+  var mailBoxNumber = 'Box 3';
+  laundryRoom = 'In-Unit';
+  
+  console.log('Mailbox Number:' + mailBoxNumber + 'Room' + laundryRoom);
+}
+
+console.log('Laundry:' + laundryRoom + ', Mail:' + mailRoom);
+
+myApartment();
+////////////////////////////////
+
+Arrays
+var bucketList = ['Alain','pogi','lol'];
+var listItem = bucketList[3];                   [] = -----> to print specific item item 
+
+console.log(bucketList);
+console.log(listItem);
+
+
+.length = how many items are in array 
+
+push()  = add items to the end off array
+bucketList.push('asdasdas', 'dfgdfgdfg');
+
+pop()   = deletes the last item of an array.
+////////////////////
+Loops
+
+for     = loop with known amount of times       /  also use to compare
+while   = loop with unknow amount of times
+
+i++     = iterator 
+
+NORMAL LOOP
+for (var i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
+
+REVERSE LOOP 
+var vacationSpots = ['Paris', 'New York', 'Barcelona'];
+
+for (var i = vacationSpots.length - 1; i >= 0; i--) {
+	console.log('I would love to visit ' + vacationSpots[i]);
+}
+
+
+COMPARISON LOOP
+var myPlaces = ['Paris', 'New York', 'Barcelona'];
+var friendPlaces = ['Rome', 'Chicago', 'Paris'];
+
+for (var i = 0; i < myPlaces.length; i++) {
+    console.log(myPlaces[i]);
+  
+  for (var j = 0; j < friendPlaces.length; j++) {
+        console.log(friendPlaces[j]);
+    
+    if (myPlaces[i] === friendPlaces[j]) {
+    			console.log('Match: ' + myPlaces[i]);
+				}
+    }
+}
+
+///////////////////////////////////
+WHILE LOOP 
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+var currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+
+console.log('Found a Spade!');
 

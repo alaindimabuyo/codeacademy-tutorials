@@ -1,0 +1,60 @@
+alert = popup msgbox
+
+
+var variable = document.getElementsByClassName('');         //select HTML elements so we can manipulate
+//////////////
+
+function main() {
+  
+}
+
+$(document).ready(main);       main in .ready(main); is a callback before the page will load
+
+
+$ = jquery selector
+/////////////
+HIDE PAGE
+function main (){
+ $('.skillset').hide();
+}
+
+main();
+/////////
+FADE AWAY JUMP SHOT
+function main (){
+ $('.skillset').hide();
+  $('.skillset').fadeIn(3000);
+
+}
+
+main();
+////////////////
+EVENT CLICK LISTENER
+$('.example-class').on('click', function() 
+{
+  // execute the code here when .example-class is clicked.
+}
+);
+////////////
+TOGGLE
+$('example-class').toggle();
+toggle will hide or show an element, each time it is triggered.
+//////////////
+TOGGLECLASS
+$('.example-class').toggleClass('active')
+'active' is the class that we will toggle on and off. 
+//////////
+$THIS
+$('.example-class').on('click', function() {  		//multiple elements with a class of example-class
+  $(this).toggleClass('active');
+});
+/////////
+NEXT() help us select elements that are next to another element
+$('.item-one').next().hide();
+//////////
+REPLACE ANY EXISTING TEXT
+$('.my-selector').text('Hello world!');
+///////////
+SLIDETOGGLE() to animate an elements entrance and exit
+$('.example-class').next.slideToggle(400);
+
