@@ -1,0 +1,69 @@
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+===================
+.EFFECT EVENT
+$(document).ready(function(){
+        $('div').click(function(){
+            $(this).effect('explode'); 
+        });
+    
+});
+-------------------------
+.BOUCE EFFECT
+
+$(document).ready(function(){
+        $('div').click(function(){
+            $(this).effect('bounce',{times:3}, 500); 
+        });
+    
+});
+
+====================
+.SLIDE EFFECT
+
+$(document).ready(function(){
+        $('div').click(function(){
+            $(this).effect('slide'); 
+        });
+    
+});
+
+===========
+.accordion 
+Displays collapsible content panels for presenting information in a limited amount of space.
+
+$(document).ready(function() {
+    $("#menu").accordion({collapsible: true, active: false});
+});
+
+this code make dropdown tables
+============
+DRAGGABLE() EFFECT
+$(document).ready(function(){
+    $('#car').draggable(); 
+});
+
+this code lets you drag anything
+==========
+SELECTABLE EFFECT
+$(document).ready(function(){
+    $('ol').selectable();
+    
+   
+});
+this code highlights the list you select
+=============
+SORTABLE EFFECT
+$(document).ready(function(){
+    $('ol').sortable();
+    
+    
+    
+});
+
+this code lets you drag list items
+
+=================
+.ACCORDION()
+
+
+
