@@ -1,0 +1,44 @@
+jQuery is a library or set of ad-ons
+HTML to CSS
+<script type = ' ' src = '' > </script>
+HTML TO jQuery 
+<link rel = 'stylesheet' type='text/css href = 'stylesheet.css'>
+================================================
+FADEOUT 
+$document.ready(function(){
+	$('div').fadeOut(1000);
+})
+------------------------------------------------
+LINK JS SCRIPT 
+<script type='text/javascript' src='asd.js '></script> =----------
+----------------------
+.ready() is a FUNCTION or basic action 
+$(document).ready(function(){
+
+});
+==============================================
+SLOWDOWN FUNCTION 
+$(document).ready(function(){
+	$('div').slowDown('slow');
+});
+===================================
+MOUSEENTER FUCNTION - produces a change when your mouse enters a given HTML element 
+$(document).ready(function){
+	$('div').mouseenter(function(){
+		$('div').hide();
+	})
+});
+===========================================
+fadeTo FUNCTION 
+$(document).ready(function(){
+	$('div').mouseenter(function(){
+		$('div).fadeTo('slow',0.25);
+	//mouseleave
+		$('div').mouseleave(function){
+			$('div').fadeTo('fast', 0.5);
+		});
+	});
+		
+});
+==========================================
+

@@ -1,0 +1,38 @@
+SETUP IS ALWAYS LIKE THIS 
+$(document).ready(function() {
+    $('thingToTouch').event(function() {
+        $('thingToAffect').effect();
+    });
+});
+==============
+COMBINING .CLICK() AND .HOVER()
+$('div').hover(function(){
+  $('div').addClass('green');
+});
+
+Following the pattern we have been learning, we target Krypton, our $('div')
+We then apply our hover event to our target.
+Finally, we execute the code inside the function(){} which adds a class of green to our target.
+
+$(document).ready(function(){
+    $('div').click(function(){
+        $(this).fadeOut('fast');   
+    });
+        $('div').hover(function(){
+            $('div').addClass('red');
+        });
+});
+
+===============================================
+THE .DBLCLICK () EVENT
+$(document).ready(function(){
+    
+    $('div').dblclick(function(){
+        $('div').fadeOut('fast'); 
+    });
+    
+});
+
+==========================
+
+

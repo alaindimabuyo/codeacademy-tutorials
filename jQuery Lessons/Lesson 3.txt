@@ -1,0 +1,119 @@
+STRING IN jQuery FILE
+$h1 = $("<h1> Hello </h1>");
+========================
+INSERTING ELEMENTS
+.append()   = inserts the specified element as the last child of the target element 
+$(".info").append("<p>Stuff!</p>");
+
+.prepend()  = inserts the specified element as the first child of the target element
+$(".info").prepend("<p>Stuff!</p>");
+
+.appendTo() = does the same as .append() but it just reveres the order of "what to add" and "where to add it"
+$('<p>Stuff!</p>').appendTo('.info');
+EXAMPLE
+$(document).ready(function(){
+    $("body").append('<p>I/m a paragraph</p>');
+
+});
+====================================
+INSERTING ELEMENTS 
+.after() = inserts after the element 
+$(document).ready(function(){
+    $('#one').after('<p>INSERTED TEXT</p>');
+})
+
+.before() = inserts before the element 
+
+=======================
+MOVING ELEMENTS 
+$(document).ready(function(){
+    $('#one').after('<p>INSERTED TEXT</p>');
+        
+    var $paragraph = $("p");  //EXISTING ELEMENT
+        $("#two").after($paragraph);   // MOVING IT
+
+============
+MODIFYTING ELEMENTS
+.addClass()
+.removeClass() 
+
+this guys copy paste or remove the css elements of a page
+
+==============
+TOGGLING CLASSES
+jQuery includes a .toggleClass() function that does 
+exactly this. If the element it's called on has the 
+class it receives as an input, .toggleClass() removes 
+that class; if the target element doesn't have that 
+class, .toggleClass() adds it.
+==============
+CHANGING YOUR STYLE
+$(document).ready(function(){
+    $("div").width("200px");
+    $("div").height("200px");
+    $("div").css("border-radius","10px");
+});
+     
+
+});
+================
+REMOVING ELEMENTS
+.empty() = delets an elements content and all its decendatns 
+.remove() = deletes the elements itself
+$(document).ready(function(){
+    $('#one').after('<p>INSERTED TEXT</p>');
+        
+    var $paragraph = $("p");
+        $("p").remove();
+        
+      
+});
+=============
+ADDING AND REMOVING CLASSES
+.addClass();
+.removeClass();
+
+=======
+MODIFYING CONTENT
+$('div').html();
+will get the HTML contents of the first div it finds, and
+
+$('div').html("I love jQuery!");
+will change the contents of the first div it finds to "I love jQuery!"
+
+.val() is used to get the value of form elements. For example,
+
+$('input:checkbox:checked').val();
+would get the value of the first checked checkbox that jQuery finds.
+
+========================
+MODIFYING HTML ELEMENTS 
+$(document).ready(function(){
+    $('#button').click(function(){
+        var toAdd = $('input[name=checkListItem]').val(); 
+    });
+    
+});
+
+Our selector finds our specific input using a css selector on our checkListItem input
+We call val() to get the value of the field
+===========================
+APPEND TO BODY
+$(document).ready(function(){
+    $('#button').click(function(){
+        var toAdd = $('input[name=checkListItem]').val(); 
+        
+            $('.list').append('<div class = "list">'+ toAdd +'</div>')
+    });
+    
+});
+We'll want the contents of our div to be the contents of our input field, 
+which we saved in the variable toAdd. That means when we append, we'll want to append
+===============================
+REMOVE WHATS BEEN CLICKED
+
+$(document).on('click','.list', function(){
+        $(this).remove();
+});
+
+You can think of .on() as a general handler that takes the event, its selector, and an action as inputs.
